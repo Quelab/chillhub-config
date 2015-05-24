@@ -66,12 +66,12 @@ function createuser(user) {
                             "firebasePassword":firebasePassword,
                             "uuid":            uuid.v4()
                         }
-                    fs.writeFile("share/firebaseconfig.json", JSON.stringify(config), function(err) {
+                    fs.writeFile("share/chillhub.json", JSON.stringify(config), function(err) {
                         if (err) {
-                            console.log("Unable to create share/firebaseconfig.json");
+                            console.log("Unable to create share/chillhub.json");
                             process.exit(1);
                         } else {
-                            console.log("created firebaseconfig.json");
+                            console.log("created chillhub.json");
                             process.exit();
                         }
                     });
